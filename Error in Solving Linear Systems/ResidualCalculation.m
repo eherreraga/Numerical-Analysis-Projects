@@ -3,8 +3,6 @@ function ResidualCalculation(A,b)
 %computed solution x.(iii) Compute residual r = b - Ax, using the procedure
 %described following(6.78).
 
-%Problem 1c) H5x = [1, .06, 0.4, 0.3, 0.3]^T, where is H5 defined in (6.92)
-
 %Solving using GEpivot Ax = b
 [x, ~, ~] = GEpivot(A,b);
 

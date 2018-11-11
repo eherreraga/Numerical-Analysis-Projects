@@ -16,15 +16,6 @@ r = b - A * x;
 [e, ~, ~] = GEpivot(A, r);
 
 %Print e and x+e
-t = e + x;
-fprintf('e: %.5f\nx+e:%.5f', e, t);
-
-for i = 1: 1: length(x)
-    e0 = e(i);
-    x0 = x(i);
-    
-    s = e0 + x0;
-    
-    fprintf('%15.5e\t%15.5f%15.5e\n', e0, s, asb(e0, x0));
+fprintf(')
 end
 

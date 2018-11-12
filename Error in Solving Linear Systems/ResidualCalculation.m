@@ -9,7 +9,7 @@ function ResidualCalculation(A,b)
 %Compute the residual
 r = b - A * x;
 
-fprintf('x:%5.f\tr:%.5f', x, r);
+fprintf('x:%5.f\t\t\tr:%.5f\n', x, r);
 
 
 

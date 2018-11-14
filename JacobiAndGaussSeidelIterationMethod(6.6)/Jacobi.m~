@@ -1,0 +1,46 @@
+function [x] = Jacobi(A, b, x0, error, maxItr)
+%Jacobi Method:
+% x^(k + 1) = D^-1(b-Rx^(k))
+%   A - Its going to be the matrix
+%   b - right side vector
+%   x0 - initial strating approximation
+%   error - error tolerance
+%   maxItr - the max iterations before coming to an end
+clc;
+clear all;
+
+[R, C] = size(A);
+
+if R ~= C
+    error('A is not a square matrix...')
+end
+
+for i = 1: R
+    row = abs(A(i, :));%Extract the row
+    d = sum(row) - row(i);%summing the other execept dominant
+    
+    if row(i) <= d
+        error('A is not diagonally dominant')
+    end
+end
+
+%Will produce a matrix with only the diagonal numbers in its diagonal line.
+ D = diag(diag(A)); 
+ 
+ err = inf;
+ while err > error
+     
+     dx = D \ (b - A * x0);
+     x0 = x + dx;
+     
+     err
+ end
+
+
+diagA = diag(A);
+A = A - diag(diagA);
+
+   
+
+end
+

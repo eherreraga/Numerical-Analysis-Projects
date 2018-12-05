@@ -1,3 +1,4 @@
+%Eduardo Herrera
 function AB2(a, b, h)
 
 % a and b - range
@@ -10,7 +11,7 @@ fprintf('\n=================================================================\n')
 %The exact equation
 T = @(x) 1/x;
 
-%Function
+%Function Given
 F = @(x,y) -((y)^2);
 
 %n-steps

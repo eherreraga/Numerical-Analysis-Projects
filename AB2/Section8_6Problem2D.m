@@ -1,3 +1,4 @@
+%Eduardo Herrera
 clc;
 clear all;
 AB2(1, 10, .2)

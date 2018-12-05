@@ -1,3 +1,4 @@
+%Eduardo Herrera
 %Compute solutions to the following problems with a second-order Taylor
 %method. Use stepsizes h = 0.2, 0.1, 0.05.
 
